@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/to-rebelia/static/css/main.113da70f.css",
-    "main.js": "/to-rebelia/static/js/main.680b14ec.js",
+    "main.js": "/to-rebelia/static/js/main.e4eb9e94.js",
     "static/media/to-rebelia-bg-desktop.png": "/to-rebelia/static/media/to-rebelia-bg-desktop.2202ce283ec1a5658d8c.png",
     "static/media/to-rebelia-bg-mobile.png": "/to-rebelia/static/media/to-rebelia-bg-mobile.867f990a587cd0992f92.png",
     "index.html": "/to-rebelia/index.html",
     "main.113da70f.css.map": "/to-rebelia/static/css/main.113da70f.css.map",
-    "main.680b14ec.js.map": "/to-rebelia/static/js/main.680b14ec.js.map"
+    "main.e4eb9e94.js.map": "/to-rebelia/static/js/main.e4eb9e94.js.map"
   },
   "entrypoints": [
     "static/css/main.113da70f.css",
-    "static/js/main.680b14ec.js"
+    "static/js/main.e4eb9e94.js"
   ]
 }
