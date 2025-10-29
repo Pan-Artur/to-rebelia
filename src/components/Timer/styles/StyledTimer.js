@@ -131,11 +131,11 @@ export const StyledTimer = styled.div`
   /* Невеликі ноутбуки (1024px - 1279px) */
   @media (min-width: 1024px) and (max-width: 1279px) {
     & span {
-      font-size: 10px;
+      font-size: 15px;
     }
 
     .timer-numbers {
-      font-size: 15px;
+      font-size: 20px;
     }
 
     .time-unit {
@@ -145,65 +145,18 @@ export const StyledTimer = styled.div`
   }
 
   /* Середні ноутбуки (1280px - 1439px) */
-  @media (min-width: 1280px) and (max-width: 1439px) {
+  @media (min-width: 1280px) {
     & span {
-      font-size: 10px;
-    }
-
-    .timer-numbers {
       font-size: 15px;
     }
 
-    .time-unit {
-      width: 10px;
-      height: 8px;
-    }
-  }
-
-  /* Великі монітори (1440px - 1919px) */
-  @media (min-width: 1440px) and (max-width: 1919px) {
-    & span {
-      font-size: 10px;
-    }
-
     .timer-numbers {
-      font-size: 15px;
+      font-size: 20px;
     }
 
     .time-unit {
-      width: 10px;
-      height: 8px;
-    }
-  }
-
-  /* Дуже великі монітори (1920px+) */
-  @media (min-width: 1920px) {
-    & span {
-      font-size: 10px;
-    }
-
-    .timer-numbers {
-      font-size: 15px;
-    }
-
-    .time-unit {
-      width: 10px;
-      height: 8px;
-    }
-  }
-
-  @media (min-width: 300px) {
-    & span {
-      font-size: 10px;
-    }
-
-    .timer-numbers {
-      font-size: 15px;
-    }
-
-    .time-unit {
-      width: 10px;
-      height: 8px;
+      width: 20px;
+      height: 14px;
     }
   }
 `;
