@@ -53,10 +53,17 @@ export const Timer = ({ targetDate }) => {
   };
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [isTimeUp, setIsTimeUp] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
+      const newTimeLeft = calculateTimeLeft();
+      setTimeLeft(newTimeLeft);
+      
+      if (newTimeLeft.days === 0 && newTimeLeft.hours === 0 && 
+          newTimeLeft.minutes === 0 && newTimeLeft.seconds === 0) {
+        setIsTimeUp(true);
+      }
     }, 1000);
 
     return () => clearInterval(interval);
@@ -67,13 +74,19 @@ export const Timer = ({ targetDate }) => {
   return (
     <StyledTimer>
       <div>
-      <span>До вистави 28 листопада:</span>
-      <div className="timer-numbers">
-        <span className="time-unit">{formatTime(timeLeft.days)}</span>:
-        <span className="time-unit">{formatTime(timeLeft.hours)}</span>:
-        <span className="time-unit">{formatTime(timeLeft.minutes)}</span>:
-        <span className="time-unit">{formatTime(timeLeft.seconds)}</span>
-      </div>
+        {isTimeUp ? (
+          <span className="time-up-message">Наш час настав!</span>
+        ) : (
+          <>
+            <span>До вистави 28 листопада:</span>
+            <div className="timer-numbers">
+              <span className="time-unit">{formatTime(timeLeft.days)}</span>:
+              <span className="time-unit">{formatTime(timeLeft.hours)}</span>:
+              <span className="time-unit">{formatTime(timeLeft.minutes)}</span>:
+              <span className="time-unit">{formatTime(timeLeft.seconds)}</span>
+            </div>
+          </>
+        )}
       </div>
     </StyledTimer>
   );

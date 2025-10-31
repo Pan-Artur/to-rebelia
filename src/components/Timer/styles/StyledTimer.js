@@ -31,7 +31,7 @@ export const StyledTimer = styled.div`
   }
 
   & span {
-    font-size: 16px; /* Мобільний за замовчуванням */
+    font-size: 16px;
   }
 
   .timer-numbers {
@@ -48,89 +48,13 @@ export const StyledTimer = styled.div`
     font-variant-numeric: tabular-nums;
   }
 
-  /* Маленькі телефони (до 360px) */
+  .time-up-message {
+    font-size: 18px;
+    text-align: center;
+  }
+
   @media (max-width: 360px) {
     & span {
-      font-size: 10px;
-    }
-
-    .timer-numbers {
-      font-size: 14px;
-    }
-
-    .time-unit {
-      width: 10px;
-      height: 8px;
-    }
-  }
-
-  /* Середні телефони (361px - 410px) */
-  @media (min-width: 361px) and (max-width: 410px) {
-    & span {
-      font-size: 10px;
-    }
-
-    .timer-numbers {
-      font-size: 14px;
-    }
-
-    .time-unit {
-      width: 10px;
-      height: 8px;
-    }
-  }
-
-  /* Великі телефони (411px - 480px) */
-  @media (min-width: 411px) and (max-width: 480px) {
-    & span {
-      font-size: 10px;
-    }
-
-    .timer-numbers {
-      font-size: 14px;
-    }
-
-    .time-unit {
-      width: 10px;
-      height: 8px;
-    }
-  }
-
-  /* Планшети вертикально (481px - 767px) */
-  @media (min-width: 481px) and (max-width: 767px) {
-    & span {
-      font-size: 10px;
-    }
-
-    .timer-numbers {
-      font-size: 14px;
-    }
-
-    .time-unit {
-      width: 10px;
-      height: 8px;
-    }
-  }
-
-  /* Планшети горизонтально (768px - 1023px) */
-  @media (min-width: 768px) and (max-width: 1023px) {
-    & span {
-      font-size: 10px;
-    }
-
-    .timer-numbers {
-      font-size: 15px;
-    }
-
-    .time-unit {
-      width: 10px;
-      height: 8px;
-    }
-  }
-
-  /* Невеликі ноутбуки (1024px - 1279px) */
-  @media (min-width: 1024px) and (max-width: 1279px) {
-    & span {
       font-size: 15px;
     }
 
@@ -142,21 +66,9 @@ export const StyledTimer = styled.div`
       width: 10px;
       height: 8px;
     }
-  }
 
-  /* Середні ноутбуки (1280px - 1439px) */
-  @media (min-width: 1280px) {
-    & span {
-      font-size: 15px;
-    }
-
-    .timer-numbers {
-      font-size: 20px;
-    }
-
-    .time-unit {
-      width: 20px;
-      height: 14px;
+    .time-up-message {
+      font-size: 18px;
     }
   }
 `;
