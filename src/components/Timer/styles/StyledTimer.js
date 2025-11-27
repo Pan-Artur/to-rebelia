@@ -53,9 +53,9 @@ export const StyledTimer = styled.div`
     text-align: center;
   }
 
-  @media (max-width: 360px) {
+  @media (max-width: 768px) {
     & span {
-      font-size: 15px;
+      font-size: 13px;
     }
 
     .timer-numbers {
@@ -63,8 +63,8 @@ export const StyledTimer = styled.div`
     }
 
     .time-unit {
-      width: 10px;
-      height: 8px;
+      width: 15px;
+      height: 12px;
     }
 
     .time-up-message {
